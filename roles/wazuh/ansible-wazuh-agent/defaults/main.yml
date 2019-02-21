@@ -1,6 +1,6 @@
 ---
 wazuh_managers:
-  - address: 127.0.0.1
+  - address: 172.18.80.55
     port: 1514
     protocol: tcp
     api_port: 55000
