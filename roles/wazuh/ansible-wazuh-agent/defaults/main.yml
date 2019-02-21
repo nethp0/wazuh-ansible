@@ -216,7 +216,7 @@ wazuh_agent_config:
     interval: '1d'
     scan_on_start: 'yes'
   osquery:
-    disable: 'yes'
+    disable: 'no'
     run_daemon: 'yes'
     bin_path_win: 'C:\ProgramData\osquery\osqueryd'
     log_path: '/var/log/osquery/osqueryd.results.log'
@@ -235,7 +235,7 @@ wazuh_agent_config:
     ports_no: 'yes'
     processes: 'yes'
   cis_cat:
-    disable: 'yes'
+    disable: 'no'
     install_java: 'yes'
     timeout: 1800
     interval: '1d'
@@ -249,7 +249,7 @@ wazuh_agent_config:
         path: 'benchmarks/CIS_Ubuntu_Linux_16.04_LTS_Benchmark_v1.0.0-xccdf.xml'
         profile: 'xccdf_org.cisecurity.benchmarks_profile_Level_1_-_Server' 
   vuls:
-    disable: 'yes'
+    disable: 'no'
     interval: '1d'
     run_on_start: 'yes'
     args:
