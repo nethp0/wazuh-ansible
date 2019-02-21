@@ -1,14 +1,14 @@
-- hosts: <your wazuh agents hosts>
+- hosts: smy-office
   roles:
     - /etc/ansible/roles/wazuh-ansible/roles/wazuh/ansible-wazuh-agent
   vars:
     wazuh_managers:
-      - address: <your manager IP>
+      - address: 172.18.80.55
         port: 1514
         protocol: udp
         api_port: 55000
         api_proto: 'http'
-        api_user: ansible
+        api_user: foo
     wazuh_agent_authd:
       enable: true
       port: 1515
